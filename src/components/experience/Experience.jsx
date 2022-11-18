@@ -3,7 +3,7 @@ import './experience.css'
 import {BsPatchCheckFill} from 'react-icons/bs'
 
 function DateTime(num) {
-	return Date.getFullYear() - num;
+	return (new Date()).getFullYear() - num;
 }
 
 const Experience = () => {
