@@ -4,28 +4,28 @@ import {AiOutlineHome, AiOutlineUser} from 'react-icons/ai';
 import {GiMaterialsScience} from 'react-icons/gi';
 import {BiWorld, BiMessageRoundedDetail} from 'react-icons/bi';
 
-const [activeNav, setActiveNav] = useState('#');
 
 
 const Nav = () => {
+	const [activeNav, setActiveNav] = useState('#');
 	return (
 		<nav>
-			<a href="#" onClick={() => setActivateNav('#')} className={activeNav === '#' ? 'active' : ''}><AiOutlineHome /></a>
+			<a href="#" onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ''}><AiOutlineHome /></a>
 			<a
 				href="#about"
-				onClick={() => setActivateNav('#about')}
+				onClick={() => setActiveNav('#about')}
 				className={activeNav === '#about' ? 'active' : ''}
 			><AiOutlineUser /></a>
 			<a href="#experience"
-				onClick={() => setActivateNav('#experience')}
+				onClick={() => setActiveNav('#experience')}
 				className={activeNav === '#experience' ? 'active' : ''}
 			><GiMaterialsScience /></a>
 			<a href="#services"
-				onClick={() => setActivateNav('#services')}
+				onClick={() => setActiveNav('#services')}
 				className={activeNav === '#services' ? 'active' : ''}
 			><BiWorld /></a>
 			<a href="#contact"
-				onClick={() => setActivateNav('#contact')}
+				onClick={() => setActiveNav('#contact')}
 				className={activeNav === '#contact' ? 'active' : ''}
 			><BiMessageRoundedDetail /></a>
 		</nav>

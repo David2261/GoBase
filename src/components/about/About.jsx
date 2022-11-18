@@ -7,7 +7,7 @@ import {TbRocket} from 'react-icons/tb'
 
 
 function TakeTime() {
-	return Date.getFullYear() - 2019;
+	return Date.now.getFullYear() - 2019;
 }
 
 
