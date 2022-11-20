@@ -1,12 +1,11 @@
 import React from 'react'
 import './portfolio.css'
-//import IMG1 from '../../assets/';
-//import IMG2 from '../../assets/';
-//import IMG3 from '../../assets/';
-//import IMG4 from '../../assets/';
-//import IMG5 from '../../assets/';
-//import IMG6 from '../../assets/';
-//import IMG7 from '../../assets/';
+import IMG1 from '../../assets/Portfolio/stock_market.webp';
+import IMG2 from '../../assets/Portfolio/store.webp';
+import IMG3 from '../../assets/Portfolio/RFT_CS.webp';
+import IMG4 from '../../assets/Portfolio/social_site.webp';
+import IMG5 from '../../assets/Portfolio/c_code.png';
+import IMG6 from '../../assets/Portfolio/py_code.webp';
 
 const data = [
 	{
@@ -33,7 +32,7 @@ const data = [
 	{
 		id: 4,
 		image: IMG4,
-		title: 'RFT_CS',
+		title: 'Social Site',
 		github: 'https://github.com/David2261/social_site',
 		demo: 'https://github.com/David2261/social_site',
 	},

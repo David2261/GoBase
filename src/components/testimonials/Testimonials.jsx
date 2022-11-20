@@ -1,9 +1,9 @@
 import React from 'react'
 import './testimonials.css'
-import AVT1 from '../../assets/avatar1.jpg'
-import AVT2 from '../../assets/avatar2.jpg'
-import AVT3 from '../../assets/avatar3.jpg'
-import AVT4 from '../../assets/avatar4.jpg'
+import AVT1 from '../../assets/Client/inga.webp'
+import AVT2 from '../../assets/Client/guzel.webp'
+import AVT3 from '../../assets/Client/david.webp'
+import AVT4 from '../../assets/Client/vladimir.webp'
 // import Swiper core and required modules
 import { Pagination } from 'swiper';
 
@@ -18,7 +18,7 @@ import 'swiper/css/scrollbar';
 const data = [
 	{
 		avatar: AVT1,
-		name: 'David Katzman',
+		name: 'Inga Kellerman',
 		review: 'Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Sint quos, itaque repudiandae similique, possimus debitis mollitia commodi qui quod, obcaecati necessitatibus veniam veritatis repellendus. Odio, similique. Beatae blanditiis culpa laborum!',
 	},
 	{
