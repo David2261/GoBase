@@ -49,7 +49,7 @@ const About = () => {
 					<p>
 						Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Labore quia accusantium, qui reprehenderit blanditiis sint optio nihil nisi voluptatem esse iusto, ad mollitia assumenda cumque, doloremque enim nobis repellendus. Ipsa.
 					</p>
-					<a href="#contact" className="btn btn-primary"></a>
+					<a href="#contact" className="btn btn-primary">Let's Talk</a>
 				</div>
 			</div>
 		</section>
