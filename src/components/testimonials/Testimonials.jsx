@@ -1,10 +1,54 @@
 import React from 'react'
 import './testimonials.css'
+import AVT1 from '../../assets/avatar1.jpg'
+import AVT2 from '../../assets/avatar2.jpg'
+import AVT3 from '../../assets/avatar3.jpg'
+import AVT4 from '../../assets/avatar4.jpg'
 
+const data = [
+	{
+		avatar: AVT1,
+		name: 'David Katzman',
+		review: 'Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Sint quos, itaque repudiandae similique, possimus debitis mollitia commodi qui quod, obcaecati necessitatibus veniam veritatis repellendus. Odio, similique. Beatae blanditiis culpa laborum!',
+	},
+	{
+		avatar: AVT2,
+		name: 'Guzel Izmailova',
+		review: 'Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Sint quos, itaque repudiandae similique, possimus debitis mollitia commodi qui quod, obcaecati necessitatibus veniam veritatis repellendus. Odio, similique. Beatae blanditiis culpa laborum!',
+	},
+	{
+		avatar: AVT3,
+		name: 'German Nikonov',
+		review: 'Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Sint quos, itaque repudiandae similique, possimus debitis mollitia commodi qui quod, obcaecati necessitatibus veniam veritatis repellendus. Odio, similique. Beatae blanditiis culpa laborum!',
+	},
+	{
+		avatar: AVT4,
+		name: 'Vladimir Kellerman',
+		review: 'Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Sint quos, itaque repudiandae similique, possimus debitis mollitia commodi qui quod, obcaecati necessitatibus veniam veritatis repellendus. Odio, similique. Beatae blanditiis culpa laborum!',
+	},
+]
 
 const Testimonials = () => {
 	return (
-		<section id='testimonials'>Testimonials</section>
+		<section id='testimonials'>
+			<h5>Review from clients</h5>
+			<h2>Testimonials</h2>
+			<div className="container testimonial__container">
+				{
+					data.map(({avatar, name, review}) => {
+						return (
+							<article className="testimonial">
+								<div className="client__avatar">
+									<img src={avatar} />
+								</div>
+								<h5 className='client__name'>{name}</h5>
+								<small className='client__review'>{review}</small>
+							</article>
+						)
+					})
+				}
+			</div>
+		</section>
 	)
 }
 
